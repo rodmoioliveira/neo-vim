@@ -1,31 +1,26 @@
 {
-	"suggest.timeout": 2000,
-	"coc.preferences.formatOnSaveFiletypes": [
-		"scss",
-		"css",
-		"py",
-		"python",
-	],
-	"eslint.run": "onSave",
-	"eslint.filetypes": ["javascript", "javascriptreact"],
-	"prettier.printWidth": 80,
-	"prettier.singleQuote": true,
-	"prettier.eslintIntegration": true,
-	"prettier.tabWidth": 2,
-	"prettier.useTabs": false,
-	"prettier.trailingComma": "es5",
-	"languageserver": {
-		"clojure-lsp": {
-			"command": "bash",
-			"args": ["-c", "clojure-lsp"],
-			"filetypes": ["clojure"],
-			"rootPatterns": ["project.clj"],
-			"additionalSchemes": ["jar", "zipfile"],
-			"trace.server": "verbose",
-			"initializationOptions": {
-				"source-paths": ["src"],
-				"macro-defs": { "project.macros/dofor": ["bindings", "bound-elements"] }
-			}
-		}
-	}
+  "suggest.timeout": 2000,
+  "coc.preferences.formatOnSaveFiletypes": ["scss", "css", "py", "python"],
+  "eslint.run": "onSave",
+  "eslint.filetypes": ["javascript", "javascriptreact"],
+  "prettier.printWidth": 80,
+  "prettier.singleQuote": true,
+  "prettier.eslintIntegration": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.trailingComma": "es5",
+  "languageserver": {
+    "clojure-lsp": {
+      "command": "bash",
+      "args": ["-c", "clojure-lsp"],
+      "filetypes": ["clojure"],
+      "rootPatterns": ["project.clj"],
+      "additionalSchemes": ["jar", "zipfile"],
+      "trace.server": "verbose",
+      "initializationOptions": {
+        "source-paths": ["src"],
+        "macro-defs": { "project.macros/dofor": ["bindings", "bound-elements"] }
+      }
+    }
+  }
 }
